@@ -1,7 +1,7 @@
 /**
  * PMS5003 Digital universal particle concentration sensor
  * 
- * by Jorge Gonzalez Garcia <jorrge@garragames.com>
+ * by Jorge Gonzalez Garcia <jorge@garragames.com>
  * 
  * Beta version
  */

@@ -1,4 +1,4 @@
-# PMS5003 Sensor
+# Makecode PMS5003 Sensor Extension
 
 ## Digital universal particle concentration sensor
 
