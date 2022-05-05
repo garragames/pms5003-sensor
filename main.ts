@@ -37,7 +37,7 @@ namespace garragames {
     /**
     Returns the value of the pms5003 particle sensor
     */
-    //% blockId=pms5003 weight=10 blockGap=22
+    //% blockId=pms5003_1 weight=10 blockGap=22
     //% block="value of metric %p"
     export function pms5003Sensor(p: Metric): number {
         return Data[p];
@@ -46,6 +46,7 @@ namespace garragames {
     /**
      * Redirect the serial RX to an Digital pin
      */
+    //% blockId=pms5003_2 weight=10 blockGap=22
     //% block="init sensor at pin %p"
     export function pms5003InitSensor(p: SerialPin): void {
         serial.redirect(SerialPin.USB_TX, p, BaudRate.BaudRate9600);
