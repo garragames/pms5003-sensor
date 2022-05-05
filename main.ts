@@ -32,19 +32,20 @@ let BUFF_SIZE = 32
 let Data = [BUFF_SIZE];
 let buffer: Buffer = pins.createBuffer(BUFF_SIZE);
 
-//% color=#FA8F13 icon="\uf124"
+//% color=#FA8F13 icon="\uf124" group="Basic Blocks"
 namespace garragames {
     /**
     Returns the value of the pms5003 particle sensor
     */
     //% blockId=pms5003_1 weight=10 blockGap=22
     //% block="value of metric %p"
+    //% weight=80
     export function pms5003Sensor(p: Metric): number {
         return Data[p];
     }
 
     /**
-     * Redirect the serial RX to an Digital pin
+     Redirect the serial RX to an Digital pin
      */
     //% blockId=pms5003_2 weight=10 blockGap=22
     //% block="init sensor at pin %p"
