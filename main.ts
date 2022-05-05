@@ -10,18 +10,18 @@
  * Metrics names
  */
 enum Metric {
-    apm10  =  0, // PM1.0, CF=1 [micro g/m3]        | diameter:  1.00
-    apm25  =  1, // PM2.5, CF=1 [micro g/m3]        | diameter:  2.50
-    apm100 =  2, // PM10.  CF=1 [micro g/m3]        | diameter: 10.00
-    pm10   =  4, // PM1.0 [micro g/m3]              | diameter:  1.00
-    pm25   =  5, // PM2.5 [micro g/m3]              | diameter:  2.50
-    pm100  =  6, // PM10. [micro g/m3]              | diameter: 10.00
-    gt03   =  7, // Particles > 0.3 micron [/0.1L]  | diameter:  0.30
-    gt05   =  8, // Particles > 0.5 micron [/0.1L]  | diameter:  0.50
-    gt10   =  9, // Particles > 1.0 micron [/0.1L]  | diameter:  1.00
-    gt25   = 10, // Particles > 2.5 micron [/0.1L]  | diameter:  2.50
-    gt50   = 11, // Particles > 5.0 micron [/0.1L]  | diameter:  5.00
-    gt100  = 12  // Particles > 10. micron [/0.1L]  | diameter: 10.00
+    Apm10  =  0, // PM1.0, CF=1 [micro g/m3]        | diameter:  1.00
+    Apm25  =  1, // PM2.5, CF=1 [micro g/m3]        | diameter:  2.50
+    Apm100 =  2, // PM10.  CF=1 [micro g/m3]        | diameter: 10.00
+    Pm10   =  4, // PM1.0 [micro g/m3]              | diameter:  1.00
+    Pm25   =  5, // PM2.5 [micro g/m3]              | diameter:  2.50
+    Pm100  =  6, // PM10. [micro g/m3]              | diameter: 10.00
+    Gt03   =  7, // Particles > 0.3 micron [/0.1L]  | diameter:  0.30
+    Gt05   =  8, // Particles > 0.5 micron [/0.1L]  | diameter:  0.50
+    Gt10   =  9, // Particles > 1.0 micron [/0.1L]  | diameter:  1.00
+    Gt25   = 10, // Particles > 2.5 micron [/0.1L]  | diameter:  2.50
+    Gt50   = 11, // Particles > 5.0 micron [/0.1L]  | diameter:  5.00
+    Gt100  = 12  // Particles > 10. micron [/0.1L]  | diameter: 10.00
 }
 
 /**
@@ -43,6 +43,9 @@ namespace garragames {
         return Data[p];
     }
 
+    /**
+     * Redirect the serial RX to an Digital pin
+     */
     //% block="init sensor at pin %p"
     export function pms5003InitSensor(p: SerialPin): void {
         serial.redirect(SerialPin.USB_TX, p, BaudRate.BaudRate9600);
