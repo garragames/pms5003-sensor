@@ -1,29 +1,37 @@
+/**
+ * Metrics names
+ */
 enum Metric {
-    apm10 = 0,
-    apm25 = 1,
-    apm100 = 2,
-    pm10 = 4,
-    pm25 = 5,
-    pm100 = 6,
-    gt03 = 7,
-    gt05 = 8,
-    gt10 = 9,
-    gt25 = 10,
-    gt50 = 11,
-    gt100 = 12
+    apm10  =  0,
+    apm25  =  1,
+    apm100 =  2,
+    pm10   =  4,
+    pm25   =  5,
+    pm100  =  6,
+    gt03   =  7,
+    gt05   =  8,
+    gt10   =  9,
+    gt25   = 10,
+    gt50   = 11,
+    gt100  = 12
 }
 
+/**
+ * Buffer Size based in the specs for PMS5003
+ * https://www.aqmd.gov/docs/default-source/aq-spec/resources-page/plantower-pms5003-manual_v2-3.pdf
+ */
 let BUFF_SIZE = 32
 
 let Data = [BUFF_SIZE];
 
 let buffer: Buffer = pins.createBuffer(BUFF_SIZE);
 
+//% color=#FAA613 icon="\uf122"
 namespace garragames {
     /**
-    Returns the value of the moisture sensor on a scale of 0 to 100.
+    Returns the value of the PSM5003 particle sensor
     */
-    //% blockId=psm5003B weight=10 blockGap=22
+    //% blockId=psm5003 weight=10 blockGap=22
     //% block="value of metric %p"
     export function psm5003Sensor(p: Metric): number {
         return Data[p];
@@ -36,6 +44,9 @@ namespace garragames {
     }
 }
 
+/**
+ * Update the Data
+ */
 basic.forever(function () {
     buffer = serial.readBuffer(BUFF_SIZE);
 
