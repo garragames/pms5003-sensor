@@ -40,8 +40,8 @@ namespace garragames {
     //% blockId=pms5003_1 weight=10 blockGap=22
     //% block="value of metric %p"
     //% weight=80
-    export function pms5003Sensor(p: Metric): number {
-        return Data[p];
+    export function pms5003Sensor(m: Metric): number {
+        return Data[m];
     }
 
     /**
