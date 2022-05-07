@@ -24,6 +24,28 @@ To edit this repository in MakeCode.
 
 ## Blocks preview
 
+### Metrics
+
+
+|Parameter | Metric           | Unit          | Diameter|
+|----------|------------------|---------------|--------:|
+|APM10     | PM1.0 CF=1       | micro g / m3  |    1.00 |
+|APM25     | PM2.5 CF=1       | micro g / m3  |    2.50 |
+|APM100    | PM10  CF=1.      | micro g / m3  |   10.00 |
+|PM10      | PM1.0            | micro g / m3  |    1.00 |
+|PM25      | PM2.5            | micro g / m3  |    2.50 |
+|PM100     | PM10             | micro g / m3  |   10.00 |
+|GT03      | Particles > 0.3  | micron / 0.1L |    0.30 |       
+|GT05      | Particles > 0.5  | micron / 0.1L |    0.50 |       
+|GT10      | Particles > 1.0  | micron / 0.1L |    1.00 |       
+|GT25      | Particles > 2.5  | micron / 0.1L |    2.50 |       
+|GT50      | Particles > 5.0  | micron / 0.1L |    5.00 |       
+|GT100     | Particles > 10.0 | micron / 0.1L |   10.00 |
+
+> PM: Particulate Matter
+
+
+
 This image shows the blocks code from the last commit in master.
 This image may take a few minutes to refresh.
 
