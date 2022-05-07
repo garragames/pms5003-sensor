@@ -35,7 +35,22 @@ let buffer: Buffer = pins.createBuffer(BUFF_SIZE);
 //% color=#FA8F13 icon="\uf124" group="Basic Blocks"
 namespace garragames {
     /**
-    Returns the value of the pms5003 particle sensor
+    Returns the value of the pms5003 particle sensor:
+    
+    PM1.0, CF=1 [micro g/m3], 
+    PM2.5, CF=1 [micro g/m3], 
+    PM10.0 CF=1 [micro g/m3], 
+
+    PM1.0  [micro g/m3], 
+    PM2.5  [micro g/m3], 
+    PM10.  [micro g/m3], 
+
+    Particles > 0.3 micron [/0.1L], 
+    Particles > 0.5 micron [/0.1L], 
+    Particles > 1.0 micron [/0.1L], 
+    Particles > 2.5 micron [/0.1L], 
+    Particles > 5.0 micron [/0.1L], 
+    Particles > 10. micron [/0.1L]
     */
     //% blockId=pms5003_1 weight=10 blockGap=22
     //% block="value of metric %p"
