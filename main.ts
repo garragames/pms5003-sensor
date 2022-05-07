@@ -10,18 +10,18 @@
  * Metrics names
  */
 enum Metric {
-    Apm10  =  0, // PM1.0, CF=1 [micro g/m3]        | diameter:  1.00
-    Apm25  =  1, // PM2.5, CF=1 [micro g/m3]        | diameter:  2.50
-    Apm100 =  2, // PM10.  CF=1 [micro g/m3]        | diameter: 10.00
-    Pm10   =  4, // PM1.0 [micro g/m3]              | diameter:  1.00
-    Pm25   =  5, // PM2.5 [micro g/m3]              | diameter:  2.50
-    Pm100  =  6, // PM10. [micro g/m3]              | diameter: 10.00
-    Gt03   =  7, // Particles > 0.3 micron [/0.1L]  | diameter:  0.30
-    Gt05   =  8, // Particles > 0.5 micron [/0.1L]  | diameter:  0.50
-    Gt10   =  9, // Particles > 1.0 micron [/0.1L]  | diameter:  1.00
-    Gt25   = 10, // Particles > 2.5 micron [/0.1L]  | diameter:  2.50
-    Gt50   = 11, // Particles > 5.0 micron [/0.1L]  | diameter:  5.00
-    Gt100  = 12  // Particles > 10. micron [/0.1L]  | diameter: 10.00
+    APM10  =  0, // PM1.0, CF=1 [micro g/m3]        | diameter:  1.00
+    APM25  =  1, // PM2.5, CF=1 [micro g/m3]        | diameter:  2.50
+    APM100 =  2, // PM10.  CF=1 [micro g/m3]        | diameter: 10.00
+    PM10   =  4, // PM1.0 [micro g/m3]              | diameter:  1.00
+    PM25   =  5, // PM2.5 [micro g/m3]              | diameter:  2.50
+    PM100  =  6, // PM10. [micro g/m3]              | diameter: 10.00
+    GT03   =  7, // Particles > 0.3 micron [/0.1L]  | diameter:  0.30
+    GT05   =  8, // Particles > 0.5 micron [/0.1L]  | diameter:  0.50
+    GT10   =  9, // Particles > 1.0 micron [/0.1L]  | diameter:  1.00
+    GT25   = 10, // Particles > 2.5 micron [/0.1L]  | diameter:  2.50
+    GT50   = 11, // Particles > 5.0 micron [/0.1L]  | diameter:  5.00
+    GT100  = 12  // Particles > 10. micron [/0.1L]  | diameter: 10.00
 }
 
 /**
