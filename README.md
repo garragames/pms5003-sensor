@@ -26,12 +26,11 @@ To edit this repository in MakeCode.
 
 ### Metrics
 
-
 |Parameter | Metric           | Unit          | Diameter|
 |----------|------------------|---------------|--------:|
 |APM10     | PM1.0 CF=1       | micro g / m3  |    1.00 |
 |APM25     | PM2.5 CF=1       | micro g / m3  |    2.50 |
-|APM100    | PM10  CF=1.      | micro g / m3  |   10.00 |
+|APM100    | PM10  CF=1       | micro g / m3  |   10.00 |
 |PM10      | PM1.0            | micro g / m3  |    1.00 |
 |PM25      | PM2.5            | micro g / m3  |    2.50 |
 |PM100     | PM10             | micro g / m3  |   10.00 |
@@ -44,12 +43,25 @@ To edit this repository in MakeCode.
 
 > PM: Particulate Matter
 
-
-
 This image shows the blocks code from the last commit in master.
 This image may take a few minutes to refresh.
 
 ![A rendered view of the blocks](https://raw.githubusercontent.com/garragames/pms5003-sensor/master/blocks.png)
+
+
+### Test code
+
+![A rendered view of the blocks](https://raw.githubusercontent.com/garragames/pms5003-sensor/master/test.png)
+
+```
+// Test code
+garragames.pms5003InitSensor(SerialPin.P16)
+basic.forever(function () {
+    basic.showNumber(garragames.pms5003Sensor(Metric.PM25))
+    basic.pause(5000)
+})
+
+```
 
 #### Metadata (used for search, rendering)
 
