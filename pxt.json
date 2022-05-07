@@ -10,11 +10,10 @@
     "files": [
         "main.ts",
         "README.md",
-        "LICENSE.txt"
-    ],
-    "testFiles": [
+        "LICENSE.txt",
         "test.ts"
     ],
+    "testFiles": [],
     "targetVersions": {
         "target": "4.0.18",
         "targetId": "microbit"
