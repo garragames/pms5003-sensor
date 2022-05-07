@@ -48,6 +48,8 @@ This image may take a few minutes to refresh.
 
 ![A rendered view of the blocks](https://raw.githubusercontent.com/garragames/pms5003-sensor/master/init_sensor.svg)
 
+![A rendered view of the blocks](https://raw.githubusercontent.com/garragames/pms5003-sensor/master/value_of_metric.svg)
+
 
 ### Test code
 
