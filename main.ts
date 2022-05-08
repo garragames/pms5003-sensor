@@ -40,7 +40,7 @@ namespace PMS5003 {
     //% blockId=pms5003_1 weight=10 blockGap=22
     //% block="value of metric %p"
     //% weight=80
-    export function pms5003Sensor(m: Metric): number {
+    export function getMetric(m: Metric): number {
         return Data[m];
     }
 
@@ -49,7 +49,7 @@ namespace PMS5003 {
      */
     //% blockId=pms5003_2 weight=10 blockGap=22
     //% block="init sensor at pin %p"
-    export function pms5003InitSensor(p: SerialPin): void {
+    export function initSensor(p: SerialPin): void {
         serial.redirect(SerialPin.USB_TX, p, BaudRate.BaudRate9600);
         return;
     }
