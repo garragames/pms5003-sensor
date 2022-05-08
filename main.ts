@@ -1,5 +1,5 @@
 /**
- * PMS5003 Digital universal particle concentration sensor
+ * PMS5003 Digital universal particulate matter concentration sensor
  * 
  * by Jorge Gonzalez Garcia <jorge@garragames.com>
  * 

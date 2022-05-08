@@ -1,6 +1,6 @@
-# Makecode PMS5003 Sensor Extension
+# PMS5003 Sensor Extension
 
-## Digital universal particle concentration sensor
+## Digital universal Particulate Matter Sensor - PMS
 
 
 > Open this page at [https://garragames.github.io/pms5003-sensor/](https://garragames.github.io/pms5003-sensor/)
