@@ -24,6 +24,12 @@ To edit this repository in MakeCode.
 
 ## Blocks preview
 
+
+This image shows the blocks code from the last commit in master.
+This image may take a few minutes to refresh.
+
+![A rendered view of the blocks](https://raw.githubusercontent.com/garragames/pms5003-sensor/master/blocks.png)
+
 ### Metrics
 
 |Parameter | Metric           | Unit          | Diameter|
@@ -43,15 +49,13 @@ To edit this repository in MakeCode.
 
 > PM: Particulate Matter
 
-This image shows the blocks code from the last commit in master.
-This image may take a few minutes to refresh.
+### Sample code
 
-![A rendered view of the blocks](https://raw.githubusercontent.com/garragames/pms5003-sensor/master/blocks.png)
-
-
-### Test code
+#### Blocks
 
 ![A rendered view of the blocks](https://raw.githubusercontent.com/garragames/pms5003-sensor/master/test.png)
+
+#### Javascript
 
 ```
 // Test code
