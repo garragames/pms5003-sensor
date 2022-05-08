@@ -33,7 +33,7 @@ let Data = [BUFF_SIZE];
 let buffer: Buffer = pins.createBuffer(BUFF_SIZE);
 
 //% color=#FA8F13 icon="\uf124" group="Basic Blocks"
-namespace garragames {
+namespace PMS5003 {
     /**
     Returns the value of the pms5003 particle sensor.
     */
