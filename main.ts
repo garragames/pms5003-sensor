@@ -10,18 +10,18 @@
  * Metrics names
  */
 enum Metric {
-    APM10  =  0, // PM1.0, CF=1 [micro g/m3]        | diameter:  1.00
-    APM25  =  1, // PM2.5, CF=1 [micro g/m3]        | diameter:  2.50
-    APM100 =  2, // PM10.  CF=1 [micro g/m3]        | diameter: 10.00
-    PM10   =  4, // PM1.0 [micro g/m3]              | diameter:  1.00
-    PM25   =  5, // PM2.5 [micro g/m3]              | diameter:  2.50
-    PM100  =  6, // PM10. [micro g/m3]              | diameter: 10.00
-    GT03   =  7, // Particles > 0.3 micron [/0.1L]  | diameter:  0.30
-    GT05   =  8, // Particles > 0.5 micron [/0.1L]  | diameter:  0.50
-    GT10   =  9, // Particles > 1.0 micron [/0.1L]  | diameter:  1.00
-    GT25   = 10, // Particles > 2.5 micron [/0.1L]  | diameter:  2.50
-    GT50   = 11, // Particles > 5.0 micron [/0.1L]  | diameter:  5.00
-    GT100  = 12  // Particles > 10. micron [/0.1L]  | diameter: 10.00
+    APM10  =  0, // PM1.0, CF=1 [micro g/m3]         | diameter:  1.00
+    APM25  =  1, // PM2.5, CF=1 [micro g/m3]         | diameter:  2.50
+    APM100 =  2, // PM10   CF=1 [micro g/m3]         | diameter: 10.00
+    PM10   =  3, // PM1.0 [micro g/m3]               | diameter:  1.00
+    PM25   =  4, // PM2.5 [micro g/m3]               | diameter:  2.50
+    PM100  =  5, // PM10  [micro g/m3]               | diameter: 10.00
+    GT03   =  6, // Particles >  0.3 micron [/0.1L]  | diameter:  0.30
+    GT05   =  7, // Particles >  0.5 micron [/0.1L]  | diameter:  0.50
+    GT10   =  8, // Particles >  1.0 micron [/0.1L]  | diameter:  1.00
+    GT25   =  9, // Particles >  2.5 micron [/0.1L]  | diameter:  2.50
+    GT50   = 10, // Particles >  5.0 micron [/0.1L]  | diameter:  5.00
+    GT100  = 11  // Particles > 10.0 micron [/0.1L]  | diameter: 10.00
 }
 
 /**
@@ -33,13 +33,17 @@ let Data = [BUFF_SIZE];
 let buffer: Buffer = pins.createBuffer(BUFF_SIZE);
 
 //% color=#FA8F13 icon="\uf124" group="Basic Blocks"
+//% groups=['Particles', 'Temperature', 'Pressure']
+//% help=functions/show-number
 namespace PMS5003 {
     /**
-    Returns the value of the pms5003 particle sensor metric.
+    * Returns the value of the pms5003 particle sensor metric.
+    * @param metric 
     */
     //% blockId=pms5003_1 weight=10 blockGap=22
     //% block="get metric %p"
     //% weight=80
+
     export function getMetric(m: Metric): number {
         return Data[m];
     }
