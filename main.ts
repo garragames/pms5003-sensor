@@ -1,5 +1,5 @@
 /**
- * PMS5003 Digital universal particle concentration sensor
+ * PMS5003 Digital universal particulate matter concentration sensor
  * 
  * by Jorge Gonzalez Garcia <jorge@garragames.com>
  * 
@@ -33,23 +33,23 @@ let Data = [BUFF_SIZE];
 let buffer: Buffer = pins.createBuffer(BUFF_SIZE);
 
 //% color=#FA8F13 icon="\uf124" group="Basic Blocks"
-namespace garragames {
+namespace PMS5003 {
     /**
-    Returns the value of the pms5003 particle sensor.
+    Returns the value of the pms5003 particle sensor metric.
     */
     //% blockId=pms5003_1 weight=10 blockGap=22
-    //% block="value of metric %p"
+    //% block="get metric %p"
     //% weight=80
-    export function pms5003Sensor(m: Metric): number {
+    export function getMetric(m: Metric): number {
         return Data[m];
     }
 
     /**
-     Redirect the serial RX to an Digital pin
+     Redirect the serial RX to an Digital pin p
      */
     //% blockId=pms5003_2 weight=10 blockGap=22
     //% block="init sensor at pin %p"
-    export function pms5003InitSensor(p: SerialPin): void {
+    export function initSensor(p: SerialPin): void {
         serial.redirect(SerialPin.USB_TX, p, BaudRate.BaudRate9600);
         return;
     }
