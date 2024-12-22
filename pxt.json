@@ -1,7 +1,7 @@
 {
     "name": "PMS5003 Sensor",
     "version": "1.0.0",
-    "description": "",
+    "description": "Driver for the PMS5003 Particle sensor",
     "dependencies": {
         "core": "*",
         "radio": "*",
